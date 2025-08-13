@@ -26,7 +26,45 @@
                 escola de educação infantil Estrelas do Amanhã.
             </p>
 
+            <form method="post" enctype="multipart/form-data">
+                <fieldset class="child-info">
+                    <legend>Informações da criança</legend>
+                    
+                    <div class="input-wrapper">
+                        <label for="fullname">Nome Completo</label>
+                        <input id="fullname" name="fullname" type="text" placeholder="Insira o nome completo da criança">
+                    </div>
 
+                    <div class="input-wrapper">
+                        <label for="birth">Data de Nascimento</label>
+                        <input type="date" name="birth" id="birth">
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="gender">Sexo</label>
+                        <select name="gender" id="gender">
+                            <option value="female">Femino</option>
+                            <option value="male">Masculino</option>
+                            <option value="na">Prefiro não responder</option>
+                        </select>
+                    </div>
+
+                    <div class="textarea-wrapper">
+                        <label for="medical-info">Informações Médicas</label>
+                        <textarea name="medical-info" id="medical-info" cols="30" rows="10" placeholder="ex. Alergias, Remédio controlado"></textarea>
+                    </div>
+
+                    <div class="droparea-wrapper">
+                        <input type="file" id="birth-file" name="birth-file">
+                        <img src="assets/icons/cloud-upload.svg" alt="">
+                        <p>
+                            Clique aqui para <br>
+                            selecionar os arquivos
+                        </p>
+                    </div>
+
+                </fieldset>
+            </form>
 
         </main>
 
