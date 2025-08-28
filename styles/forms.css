@@ -28,3 +28,13 @@ fieldset + fieldset {
     display: flex;
     gap: 1rem;
 }
+
+@media (max-width: 800px) {
+    .actions-wrapper {
+        margin: 24px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

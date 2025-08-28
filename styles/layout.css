@@ -58,6 +58,24 @@ aside {
     #app {
         display: flex;
         flex-direction: column;
-        
+        height: auto;
+
+        & aside {
+            max-width: none;
+            text-align: center;
+            order: -1;
+            padding: 24px;
+
+            & .aside-container {
+                & h2, p {
+                    display: none;
+                }
+            }
+        }
+
+        & main {
+            padding: 24px;
+        }
+
     }
 }

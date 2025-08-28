@@ -27,6 +27,22 @@ button {
         }
     }
 
+}
+
+@media (max-width: 800px) {
+    button {
+        &.btn-secondary {
+            margin: 0;
+            width: 100%;
+        }
+
+        &.btn-primary {
+            margin: 0;
+            width: 100%;
+        }
+
+
+    }
     
 }
 
